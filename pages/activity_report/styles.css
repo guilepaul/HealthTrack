@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex !important;
+  height: 100vh !important;
+  width: 100% !important;
+  background-image: url("../../assets/corrida.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 10000px rgba(123, 173, 214, 0.7) !important;
+  flex-direction: column;
+}
+
+nav {
+  background-color: rgba(70, 123, 167, 0.795) !important;
+}
+nav a {
+  color: white !important;
+}
+
+nav button {
+  border: 1px solid white !important;
+  color: white !important;
+  text-decoration: white !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#pesquisar {
+  color: white;
+  border-color: white;
+}
+
+.nav-logo {
+  height: 30px;
+}
+
+.content-body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.caroussel {
+  width: 100% !important;
+  height: 400px !important;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  #carouselExampleIndicators {
+    height: 330px !important;
+  }
+}
+
+.card {
+  background-color: rgb(113, 161, 201);
+  color: white;
+}
+.buttom-card {
+  height: 40px;
+  width: 100%;
+  border-radius: 50px !important;
+  background-color: #addaf6 !important;
+  border-color: #addaf6 !important;
+  color: #36acf8 !important;
+}
+
+.input-card {
+  border-radius: 50px !important;
+  background-color: #addaf6 !important;
+  border-color: #addaf6 !important;
+  color: white !important;
+  margin: 10px;
+  height: 40px;
+}
+
+#input-collapse {
+  border: none !important;
+}
+
+::-webkit-input-placeholder {
+  color: white !important;
+  text-align: center !important;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: white !important;
+  text-align: center !important;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white !important;
+  text-align: center !important;
+}
+
+:-ms-input-placeholder {
+  color: white !important;
+  text-align: center !important;
+}
+#placeholder-center {
+  text-align: center !important;
+  padding-left: 50px !important;
+}
+
+footer {
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(70, 123, 167, 0.795);
+}
+#text-menu {
+  color: black !important;
+}
+
+footer small {
+  text-align: center;
+}
+label {
+  color: white !important;
+}
+
+td {
+  color: white;
+  text-align: center; /* alinhamento horizontal */
+  vertical-align: middle; /* alinhamento vertical */
+}
+th {
+  color: white;
+  text-align: center; /* alinhamento horizontal */
+  vertical-align: middle; /* alinhamento vertical */
+}

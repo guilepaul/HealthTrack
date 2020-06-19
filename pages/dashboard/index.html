@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function(){
+          // Read value on page load
+          $("#result b").html($("#formControlRange").val());
+  
+          // Read value on change
+          $("#formControlRange").change(function(){
+              $("#result b").html($(this).val());
+          });
+      });        
+  </script> 
+  <link rel="shortcut icon" href="../../assets/favicon.ico" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>HealthTrack</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand" href="#">
+        <div class="nav-logo">
+          <img src="../../assets/logo.png" style="height: 40px;" />
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado"
+        aria-expanded="false"
+        aria-label="Alterna navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Dashboard <span class="sr-only">(página atual)</span></a
+            >
+          </li>
+          
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Registros
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../wheight_report/index.html">Peso</a>
+              <a class="dropdown-item" href="../activity_report/index.html">Atividade</a>
+              <a class="dropdown-item" href="../food_report/index.html">Refeiçao</a>
+              
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Perfil
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../profile/index.html">Editar Perfil</a>
+              <a class="dropdown-item" href="../../index.html">Sair</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Pesquisar"
+            aria-label="Pesquisar"
+          />
+          <button
+            id="pesquisar"
+            class="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+          >
+            Pesquisar
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- conteudo -->
+    <div class=".content-body">
+      <!-- Carrousel -->
+      <div id="carouselmedia" class="caroussel">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+          style="height: 400px;"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" style="height: 400px;">
+            <div class="carousel-item active"
+            style="height: 400px;">
+              <img
+                class="d-block w-100"
+                src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                alt="Primeiro Slide"
+                />
+                  <div class="carousel-caption d-none d-md-block" style="align-self: center;">
+                    
+                    <h1>HEALTH TRACK</h1>
+                    <p>Go Forest!</p>
+                  </div>
+            </div>
+            <div class="carousel-item" style="height: 400px;">
+              <img
+                class="d-block w-100"
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                alt="Segundo Slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>HEALTH TRACK</h1>
+                <p>No Pain, No Gain!</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="height: 400px;">
+              <img
+                class="d-block w-100"
+                src="https://images.unsplash.com/photo-1561043433-aaf687c4cf04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                alt="Terceiro Slide"
+              />
+              <div class="carousel-caption d-none d-md-block" style="align-self: center;">
+                <h1>HEALTH TRACK</h1>
+                <p>Coma com os olhos. Um prato colorido é o segredo de uma alimentação completa.</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div>
+      <!-- Card Principal -->
+      <div class="card text-center"
+      style="margin-top: 40px;">
+        <div class="card-header">
+          SEU RESUMO DIÁRIO
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Olá Guilherme Di Paula</h5>
+          <p class="card-text">Seu IMC é 24. <br> Parabéns, você está no seu peso ideal!</p>
+        </div>
+        <div class="card-footer text-muted">
+          Último regitro feito 2 dias atrás
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="card-group"
+      style="margin-top: 20px;">
+        <div class="card m-3">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Atividades físicas</h5>
+            <p class="card-text">O exercício físico também é alimento para o corpo e a alma. O mais importante para é a constância. Pratique atividades físicas ao menos trê vezes por semana.</p>
+            <p class="card-text"><p>
+              <button class="buttom-card" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Resgitre sua atividade
+              </button>
+              
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div id="input-collapse" class="card card-body">
+                <div class="input-group mb-3">
+                  
+                  <select class="custom-select input-card" id="inputGroupSelect01">
+                    <option selected>Atividade</option>
+                    <option value="1">Corrida</option>
+                    <option value="2">Ciclismo</option>
+                    <option value="3">Natação</option>
+                  </select>
+                </div>
+                <div class="input-group mb-3">
+                  
+                  <select class="custom-select input-card" id="inputGroupSelect01">
+                    <option selected>Intensidade</option>
+                    <option value="1">Leve</option>
+                    <option value="2">Moderada</option>
+                    <option value="3">Pesada</option>
+                  </select>
+                </div>
+                <input id="placeholder-center" class="input-card" type="date" placeholder="Data do Registro"/>
+                <form  style="color: white;">
+                  <div class="form-group">
+                    <input type="range" min="15" max="180" step="15" class="form-control-range" id="formControlRange">
+                    <div id="result">Total em minutos: <b></b></div>
+                  </div>
+                </form>
+                <a href="../activity_report/index.html"><button class="buttom-card" >Confirmar</button></a>
+
+              </div>
+            </div></p>
+          </div>
+        </div>
+        <div class="card m-3">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1452967712862-0cca1839ff27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Refeições</h5>
+            <p class="card-text">Opte por alimentos saldáveis. Comemos com os olhos também,  pratos coloridos, balanceados e diversificados são a chave para atingir seus objetivos.</p>
+            <p class="card-text"><p>
+              <button class="buttom-card" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Resgitre sua refeição
+              </button>
+              
+            </p>
+            <div class="collapse" id="collapseExample1">
+              <div id="input-collapse" class="card card-body">
+                <input class="input-card" type="text" placeholder="Alimento"/>
+                <input class="input-card" type="number" placeholder="Quantidade de Calorias"/>
+                <input id="placeholder-center" class="input-card" type="date" placeholder="Data do Registro"/>
+                <a href="../food_report/index.html"><button class="buttom-card" >Confirmar</button></a>
+              </div>
+            </div></p>
+          </div>
+        </div>
+        <div class="card m-3">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1522844505858-6cdc0201bcd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Peso</h5>
+            <p class="card-text">O monitor seu peso é muito importante para garantir que seus objetivos estão sendo atingidos, além de funcionar como fator motivacional. Pese-se diariamente.</p>
+            <p class="card-text"><p>
+              <button class="buttom-card" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Resgitre seu peso
+              </button>
+              
+            </p>
+            <div class="collapse" id="collapseExample2">
+              <div  id="input-collapse" class="card card-body">
+                <input class="input-card" type="number" placeholder="Peso em Kg"/>
+                <input id="placeholder-center" class="input-card" type="date" placeholder="Data do Registro"/>
+                <a href="../wheight_report/index.html"><button class="buttom-card" >Confirmar</button></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card Dicas -->
+    <div class="card text-center"
+    style="margin-top: 20px; margin-bottom: 60px;">
+      <div class="card-header">
+        DICA DO DIA
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Evite elevadores, use as escadas.</h5>
+        <p class="card-text">Estudos comprovam que essa pequena mudança de hábito pode melhorar seu condionamento e aumentar a sua disposição.</p>
+      </div>
+      <div class="card-footer text-muted">
+        Se puder, caminhe!
+      </div>
+    </div>
+    <footer class="footer fixed-bottom"><small class="footer-content">copyright 2020 | GuileDev </br> Desenvolvimento de Software LTDA</small></footer>
+  </body>
+</html>

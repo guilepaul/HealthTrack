@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <!--     Fonts and icons     -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+    />
+  
+    
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="shortcut icon" href="../../assets/favicon.ico" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>HealthTrack</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="../dashboard/index.html">
+        <div class="nav-logo">
+          <img src="../../assets/logo.png" style="height: 40px;" />
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado"
+        aria-expanded="false"
+        aria-label="Alterna navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../dashboard/index.html"
+              >Dashboard <span class="sr-only">(página atual)</span></a
+            >
+          </li>
+        
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Registros
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a id="text-menu" class="dropdown-item" href="../wheight_report/index.html">Peso</a>
+              <a id="text-menu" class="dropdown-item" href="../activity_report/index.html">Atividade</a>
+              <a id="text-menu" class="dropdown-item" href="../food_report/index.html">Refeiçao</a>
+              
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Perfil
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a id="text-menu" class="dropdown-item" href="../profile/index.html">Editar Perfil</a>
+              <a id="text-menu" class="dropdown-item" href="../../index.html">Sair</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Pesquisar"
+            aria-label="Pesquisar"
+          />
+          <button
+            id="pesquisar"
+            class="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+          >
+            Pesquisar
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class=".content-body mt-5"
+    style="height: 100% !important;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Editar Perfil</h4>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-5 pr-1">
+                      <div class="form-group">
+                        <label>Tipo de Plano</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          disabled=""
+                          placeholder="Plans"
+                          value="Atleta Pro"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3 px-1">
+                      <div class="form-group">
+                        <label>Usuário</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Username"
+                          value="guilepaul"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email"
+                          value="guilepaul@gmail.com"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 pr-1">
+                      <div class="form-group">
+                        <label>Nome</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Name"
+                          value="Guilherme"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 pl-1">
+                      <div class="form-group">
+                        <label>Sobrenome</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Last Name"
+                          value="Di Paula"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Endereço</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Home Address"
+                          value="Rua Rogério Armelin Guanaes 360 ap 51"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Cidade</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="City"
+                          value="São Paulo"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Estado</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Country"
+                          value="SP"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>CEP</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          placeholder="ZIP Code"
+                          value="03732160"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Sobre o atleta</label>
+                        <textarea
+                          rows="4"
+                          cols="80"
+                          class="form-control"
+                          placeholder="Here can be your description"
+                          value="Sobre"
+                        >
+Atleta de rua há mais de 12 anos, já participei de 5 maratonas e 2 Corridas de São Silvestre.</textarea
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-info btn-fill pull-right"
+                  >
+                    Atualizar Perfil
+                  </button>
+                  <div class="clearfix"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-user">
+              <div class="card-image">
+                <img
+                  src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <div class="author">
+                  <a href="#">
+                    <img
+                      class="avatar border-gray"
+                      src="../../assets/Guile.jpg"
+                      alt="..."
+                    />
+                    <h5 class="title">Guilherme Di Paula</h5>
+                  </a>
+                  <p class="description" style="color: white;">
+                    guilepaul@gmail.com
+                  </p>
+                </div>
+                <p class="description text-center" style="color: white;">
+                  "Atleta de rua há mais de 12 anos,
+                  <br />
+                  já participei de 5 maratonas e <br />
+                  2 Corridas de São Silvestre."
+                </p>
+              </div>
+              <hr />
+              <div class="button-container mr-auto ml-auto">
+                <button href="#" class="btn btn-simple btn-link btn-icon">
+                  <i class="fa fa-facebook-square"></i>
+                </button>
+                <button href="#" class="btn btn-simple btn-link btn-icon">
+                  <i class="fa fa-twitter"></i>
+                </button>
+                <button href="#" class="btn btn-simple btn-link btn-icon">
+                  <i class="fa fa-google-plus-square"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer mt-5 fixed-bottom"><small class="footer-content">copyright 2020 | GuileDev </br> Desenvolvimento de Software LTDA</small></footer>
+    </div>
+  </body>
+</html>
